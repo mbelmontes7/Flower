@@ -1,74 +1,59 @@
 import turtle
-wn = turtle.Screen()             
-wn.bgcolor("black")
+wn = turtle.Screen()
+wn.bgcolor("#A45C40")
 
-boo = turtle.Turtle()
-boo.hideturtle()
-boo.color("darkred")
-boo.pensize(1)
-boo.speed(500)
+#1
+tur1 = turtle.Turtle()
+tur1.hideturtle()
+tur1.fillcolor("#E4B7A0")
+tur1.begin_fill()
+tur1.pensize(3)
+tur1.speed(900)
+tur1.end_fill()
 
-# moo = turtle.Turtle()  
-# moo.penup()
-# moo.goto(200, 200)
-# moo.color("hotpink")
-# moo.pendown()
-# moo.pensize(1)
-# moo.speed(500)
+#2
+tur2 = turtle.Turtle()
+tur2.penup()
+tur2.goto(200,200)
+tur2.color("#C38370")
+tur2.pensize(3)
+tur2.speed(900) 
+tur2.pendown()
+tur1.hideturtle()
 
-# shoo = turtle.Turtle()  
-# shoo.penup()
-# shoo.goto(-200, -200)
-# shoo.color("lightgreen")
-# shoo.pendown()
-# shoo.pensize(1)
-# shoo.speed(500)
 
-# too = turtle.Turtle()  
-# too.penup()
-# too.goto(-200, 200)
-# too.color("lightblue")
-# too.pendown()
-# too.pensize(1)
-# too.speed(500)
+#3 
+tur3 = turtle.Turtle()  
+tur3.penup()
+tur3.goto(-200, -200)
+tur3.color("#F6EEE0")
+tur3.pendown()
+tur3.pensize(3)
+tur3.speed(900)
 
-# zoo = turtle.Turtle()  
-# zoo.penup()
-# zoo.goto(200, -200)
-# zoo.color("purple")
-# zoo.pendown()
-# zoo.pensize(1)
-# zoo.speed(500)
 
+
+# # tur4 = turtle.turtle ()
+
+
+
+
+# # tur5 = turtle.turtle ()
+
+
+#for range
 for i in range(150):
- boo.forward(i)
- boo.right(75)
-#   moo.forward(i)
-#   moo.left(100)
-#   moo.left(90)
-#   shoo.backward(i)
-#   shoo.right(100)
-#   shoo.left(50)
-#   too.backward(i)
-#   too.right(100)
-#   too.right(50)
-#   zoo.forward(i)
-#   zoo.right(100)
-#   zoo.left(40)
+ tur1.forward(i)
+ tur1.right(75)
+ tur2.forward(i)
+ tur2.left(100)
+ tur2.left(90)
+ tur3.backward(i)
+ tur3.right(100)
+ tur3.left(50)
 
-# jolene = turtle.Turtle()
-# jolene.penup()
-# jolene.color("yellow")
-# jolene.shape("circle")
-# jolene.speed(350)
-  
-# for size in range(8):
-#   jolene.forward(150)
-#   jolene.stamp()
-#   jolene.forward(-150)
-#   jolene.right(90)
-#   jolene.right(45)
 
-# jolene.hideturtle()
 
+
+# turtle.done() 
 wn.exitonclick()
