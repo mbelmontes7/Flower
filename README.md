@@ -1,0 +1,100 @@
+# Flower
+from ast import pattern
+from tokenize import Name
+import turtle
+wn = turtle.Screen()
+wn.bgcolor("#FFEFE5")
+
+#name
+Name = turtle.Turtle()
+Name.penup()
+# Name.write("By:Magaly Belmontes")
+Name.goto(-350, 350)
+Name.pendown()
+Name.write("By: Magaly Belmontes🪐",move=9, font=('monaco',30,'bold'),align='left')
+
+
+
+
+
+#1 (La del medio)
+tur1 = turtle.Turtle()
+tur1.hideturtle()
+tur1.fillcolor("#E33946")
+tur1.begin_fill()
+tur1.pensize(3)
+tur1.speed(900)
+tur1.end_fill()
+
+#2 (la de orilla) 
+tur2 = turtle.Turtle()
+tur2.penup()
+tur2.goto(200,200)
+tur2.color("#4F3A4B")
+tur2.pensize(1)
+tur2.speed(900) 
+tur2.pendown()
+
+
+#3 (white de la esquina de abajo)
+tur3 = turtle.Turtle()  
+tur3.penup()
+tur3.goto(-200, -200)
+tur3.color("#3B465C")
+turtle.shape("circle")
+tur3.pendown()
+tur3.pensize(3)
+tur3.speed(900)
+tur3.pendown()
+
+
+
+#4 
+tur4 = turtle.Turtle()  
+tur4.penup()
+tur4.goto(-200, 200)
+tur4.color("#501718")
+tur4.pendown()
+tur4.pensize(3)
+tur4.speed(900)
+tur4.shape("circle")
+
+
+#5 
+tur5 = turtle.Turtle()  
+tur5.penup()
+tur5.goto(200, -200)
+tur5.color("#2D1C46")
+tur5.pendown()
+tur5.pensize(3)
+tur5.speed(900)
+tur5.shape("turtle")
+
+
+
+#for range (Aqui se ponen todas juntas)
+for i in range(150):
+ tur1.forward(i)
+ tur1.right(75)
+ tur2.forward(i)
+ tur2.right(90)
+ tur2.right(1)
+ tur3.backward(i)
+ tur3.right(90)
+ tur3.left(40)
+ tur3.circle(9)
+ tur4.backward(i)
+ tur4.right(100)
+ tur4.left(40)
+ tur5.forward(i)
+ tur5.right(100)
+ tur5.left(50)
+ tur5.forward(10)
+ 
+
+
+
+
+# turtle.done()
+turtle.getcanvas().postscript(file="duck.eps") 
+wn.exitonclick()
